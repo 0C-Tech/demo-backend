@@ -1,0 +1,4 @@
+FROM --platform=linux/amd64 jdk17
+COPY  target/gpt-demo.jar /usr/local/
+WORKDIR /usr/local/
+CMD ["nohup","java","-jar","gpt-demo.jar","&"]

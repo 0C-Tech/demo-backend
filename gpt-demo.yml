@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: gpt-demo
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: gpt-demo
+  template:
+    metadata:
+      labels:
+        app: gpt-demo
+    spec:
+      containers:
+        - name: gpt-demo
+          image: myregistry/myapp:1.0
+          ports:
+            - containerPort: 8080
