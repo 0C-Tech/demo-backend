@@ -1,8 +1,8 @@
 docker login --username=xuyq@1732306579235718 registry.us-west-1.aliyuncs.com    bojie889
 docker tag f9cd52d53e90 registry.us-west-1.aliyuncs.com/chat_demo/gpt-demo:v1
 docker push registry.us-west-1.aliyuncs.com/chat_demo/gpt-demo:v1
-docker pull registry.us-west-1.aliyuncs.com/chat_demo/gpt-demo:v1
-docker run -d -p 8080:8080 registry.us-west-1.aliyuncs.com/chat_demo/gpt-demo:v1
+docker pull registry.us-west-1.aliyuncs.com/chat_demo/gpt-demo:v3
+docker run -d -p 8080:8080 registry.us-west-1.aliyuncs.com/chat_demo/gpt-demo:v3
 
 
 启动 Nginx 服务：systemctl start nginx
